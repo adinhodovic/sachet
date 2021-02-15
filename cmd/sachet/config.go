@@ -6,6 +6,7 @@ import (
 
 	"github.com/messagebird/sachet/provider/aliyun"
 	"github.com/messagebird/sachet/provider/aspsms"
+	"github.com/messagebird/sachet/provider/clickatell"
 	"github.com/messagebird/sachet/provider/cm"
 	"github.com/messagebird/sachet/provider/exotel"
 	"github.com/messagebird/sachet/provider/freemobile"
@@ -45,6 +46,7 @@ var config struct {
 		Infobip      infobip.InfobipConfig
 		Kannel       kannel.KannelConfig
 		Exotel       exotel.ExotelConfig
+		Clickatell   clickatell.ClickatellConfig
 		CM           cm.CMConfig
 		Telegram     telegram.TelegramConfig
 		Turbosms     turbosms.TurbosmsConfig

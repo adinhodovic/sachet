@@ -14,6 +14,7 @@ import (
 	"github.com/messagebird/sachet"
 	"github.com/messagebird/sachet/provider/aliyun"
 	"github.com/messagebird/sachet/provider/aspsms"
+	"github.com/messagebird/sachet/provider/clickatell"
 	"github.com/messagebird/sachet/provider/cm"
 	"github.com/messagebird/sachet/provider/exotel"
 	"github.com/messagebird/sachet/provider/freemobile"
@@ -182,6 +183,8 @@ func providerByName(name string) (sachet.Provider, error) {
 		return smsc.NewSmsc(config.Providers.Smsc), nil
 	case "exotel":
 		return exotel.NewExotel(config.Providers.Exotel), nil
+	case "clickatell":
+		return clickatell.NewClickatell(config.Providers.Clickatell), nil
 	case "cm":
 		return cm.NewCM(config.Providers.CM), nil
 	case "telegram":

@@ -33,6 +33,8 @@ providers:
     login: sachet
     password: sachet
     sender: SACHET
+  clickatell:
+    token: "724679217:aa26V5mK3e2qkGsSlTT-iHreaa5FUyy3Z_0"
   cm:
     producttoken: '00000000-0000-0000-0000-000000000000'
   telegram:
